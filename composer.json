@@ -5,7 +5,7 @@
     "license": "mit",
     "autoload": {
         "psr-4": {
-            "Cvegetation\\Camellia\\": "src/"
+            "Vegetation\\Camellia\\": "src/"
         }
     },
     "authors": [
