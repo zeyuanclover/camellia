@@ -1,0 +1,19 @@
+{
+    "name": "cvegetation/camellia",
+    "description": "this is route module",
+    "type": "l",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Cvegetation\\Camellia\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zeyuanclover",
+            "email": "zeyuanclover@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
