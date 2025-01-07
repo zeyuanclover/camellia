@@ -1,8 +1,8 @@
 <?php
 
-namespace Plantation\Banana\Router;
+namespace Vegetation\Camellia;
 
-use Plantation\Banana\Router\Dispatcher\RegDispather;
+use Vegetation\Camellia\Dispatcher\RegDispather;
 
 class Dispatcher
 {

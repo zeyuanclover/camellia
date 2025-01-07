@@ -1,9 +1,8 @@
 <?php
 
-namespace Plantation\Banana\Router\Dispatcher;
+namespace Vegetation\Camellia\Dispatcher;
 
-use FastRoute\Route;
-use Plantation\Banana\Router\Dispatcher;
+use Vegetation\Camellia\Dispatcher;
 
 class RegDispather
 {

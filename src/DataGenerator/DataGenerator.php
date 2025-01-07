@@ -1,6 +1,6 @@
 <?php
 
-namespace Plantation\Banana\Router\DataGenerator;
+namespace Vegetation\Camellia\DataGenerator;
 
 interface DataGenerator
 {

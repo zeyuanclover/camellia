@@ -1,8 +1,8 @@
 <?php
 
-namespace Plantation\Banana\Router\Collector;
+namespace Vegetation\Camellia\Collector;
 
-use Plantation\Banana\Router\DataGenerator\DataGenerator;
+use Vegetation\Camellia\DataGenerator\DataGenerator;
 
 class RouteCollector
 {

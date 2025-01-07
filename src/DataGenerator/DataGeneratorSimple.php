@@ -1,9 +1,9 @@
 <?php
 
-namespace Plantation\Banana\Router\DataGenerator;
+namespace Vegetation\Camellia\DataGenerator;
 
-use Plantation\Banana\Cache\Cache;
-use Plantation\Banana\Cache\Drive\RedisSingle;
+use Vegetation\Fern\Cache;
+use Vegetation\Fern\Adapter\RedisSingle;
 
 class DataGeneratorSimple implements DataGenerator
 {
@@ -33,7 +33,7 @@ class DataGeneratorSimple implements DataGenerator
     public function getData()
     {
         $method = $_SERVER['REQUEST_METHOD'];
-        $cache = new Cache(new RedisSingle(false,$_SERVER['container']->get('redis'),[]));
+        $cache = new Cache(new RedisSingle($_SERVER['container']->get('redis')));
         return $cache->get('CloverRoute-'.$this->appName.'['.$method.']');
     }
 
@@ -51,7 +51,7 @@ class DataGeneratorSimple implements DataGenerator
             throw new \Exception("redis 未载入！");
         }
 
-        $cache = new Cache(new RedisSingle(false,$_SERVER['container']->get('redis'),[]));
+        $cache = new Cache(new RedisSingle($_SERVER['container']->get('redis')));
         $methodData = $cache->get('CloverRoute-'.$this->appName.'['.$method.']');
 
         $patterns = $match = $this->matchBraces($routeData);
@@ -119,7 +119,7 @@ class DataGeneratorSimple implements DataGenerator
     public function reset()
     {
         $method = $_SERVER['REQUEST_METHOD'];
-        $cache = new Cache(new RedisSingle(false,$_SERVER['container']->get('redis'),[]));
+        $cache = new Cache(new RedisSingle($_SERVER['container']->get('redis')));
         return $cache->set('CloverRoute-'.$this->appName.'['.$method.']', [],0);
     }
 
